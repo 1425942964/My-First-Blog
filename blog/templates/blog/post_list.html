@@ -1,19 +1,15 @@
 <html>
 	<head>
-		<title>Intro To Engineering</title>
+		<title>MODULES</title>
 	</head>
 	<body>
-		<div>
-			<h1>Intro To Engineering</h1>
-			<h2>Welcome to the class of ENGINEERING</h2>
-			<p>This website was created by a former student of this class to deliver a better way of learning</p>
-			<p>In this class we will learn the following language of coding</p>
-			<ul>
-				<li>Python</li>
-				<li>Javascript</li>
-				<li>HTML & CSS</li>
-				<li>problem solving with a team in a <strong>Real World Envoriment</strong></li>
-			</ul>
-		</div>
+		<h1><strong>Posts</strong></h1>
+		{% for post in posts %}
+			<div>
+				<h1><a href="">{{post.title}}</a></h1>
+				<p>{{post.text|linebreaksbr}}</p>
+				<p>published.{{post.published_date}}</p>
+			</div>
+		{% endfor %}
 	</body>
 </html>
