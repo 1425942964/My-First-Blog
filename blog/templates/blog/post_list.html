@@ -1,15 +1,13 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+
 <html>
 	<head>
 		<title>MODULES</title>
 	</head>
 	<body>
-		<h1><strong>Posts</strong></h1>
-		{% for post in posts %}
-			<div>
-				<h1><a href="">{{post.title}}</a></h1>
-				<p>{{post.text|linebreaksbr}}</p>
-				<p>published.{{post.published_date}}</p>
-			</div>
-		{% endfor %}
+		<form>
+			<input type="button" value="Contact" onclick="window.location.href='http://introtoengineering.pythonanywhere.com/contact/'"/>
+		</form>
 	</body>
 </html>

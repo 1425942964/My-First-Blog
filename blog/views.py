@@ -16,3 +16,6 @@ def introduction(request):
 
 def contact(request):
 	return render(request, 'blog/contact.html')
+
+def hackerrank(request):
+	return render(request, 'blog/hackerrank.html')

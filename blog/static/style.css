@@ -1,0 +1,25 @@
+
+body {
+  background-color: rgb(75, 75, 75);
+}
+
+p {
+  color: rgb(255, 255, 255);
+}
+form {
+    float: left;
+    text-align: center;
+  }
+img {
+  height: 1000px;
+}
+header {
+  text-align: center;
+}
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+div {
+  color: rgb(255, 255, 255);
+}
