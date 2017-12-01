@@ -6,6 +6,8 @@ from django.utils import timezone
 from .models import Post
 
 # Create your views here.
+def hackerrank(request):
+	return render(request, 'blog/hackerrank.html')
 
 def post_list(request):
 	posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
@@ -16,6 +18,3 @@ def introduction(request):
 
 def contact(request):
 	return render(request, 'blog/contact.html')
-
-def hackerrank(request):
-	return render(request, 'blog/hackerrank.html')
