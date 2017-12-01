@@ -18,3 +18,6 @@ def introduction(request):
 
 def contact(request):
 	return render(request, 'blog/contact.html')
+
+def hello(request):
+	return render(request, 'blog/hello.html')
